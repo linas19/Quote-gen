@@ -1,20 +1,38 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quote generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-
-
 </head>
 <body>
-  <wrapper id='quote-box'>
-    <div id="text"></div>
-    <div id="author"></div>
-    <button id='new-quote'></button>
-  </wrapper>
+  <div id='quote-box'>
+      <div id="quote-text">
+        <i id='quote' class="fa fa-quote-left" style="font-size:36px"></i>         <span id='text'></span>
+        <i id='quote' class="fa fa-quote-right" aria-hidden="true" style="font-size:36px"></i>
+        </div>
+      <div id="author"></div>
+      <div class='buttons'>
+        <div class='social-media'>
+          <button class='social-media-button'>
+            <a id='tweet-quote' class="twitter-share-button" href="https://twitter.com/intent/tweet">
+            <i class="fa fa-twitter"></i>
+          </a></button>
+          <button class='social-media-button'><a href="https://www.tumblr.com/share"><i class="fa fa-tumblr"></i></a></button>
+          <button class='social-media-button'><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></button>
+          <button class='social-media-button'><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></button>
+        </div>
+        <button id='new-quote' onclick='makeNewQuote();'>New quote</button>
+      </div>
+      
+    </div>
+  </div>
 </body>
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>
+
 </html>
